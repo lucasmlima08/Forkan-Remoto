@@ -1,0 +1,121 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".Main"
+    android:background="@drawable/fundo">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:baselineAligned="false">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="7"></RelativeLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:src="@drawable/logo"
+                android:adjustViewBounds="false"
+                android:scaleType="fitCenter"
+                android:layout_weight="1.2" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1">
+
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:text="@string/novoJogo"
+                    android:id="@+id/novoJogo"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/menu"
+                    android:clickable="true"
+                    android:onClick="eventosMenuInicial"
+                    android:background="@drawable/tema_botoes_main"
+                    android:nestedScrollingEnabled="false"
+                    android:longClickable="false"
+                    android:capitalize="words"
+                    android:textColor="#ffffffff" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.4">
+
+                </RelativeLayout>
+
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:text="@string/recordePessoal"
+                    android:id="@+id/recordePessoal"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/menu"
+                    android:clickable="true"
+                    android:onClick="eventosMenuInicial"
+                    android:background="@drawable/tema_botoes_main"
+                    android:textColor="#ffffffff" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.4" />
+
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:text="@string/rankingMundial"
+                    android:id="@+id/rankingMundial"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/menu"
+                    android:clickable="true"
+                    android:onClick="eventosMenuInicial"
+                    android:background="@drawable/tema_botoes_main"
+                    android:textColor="#ffffffff" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.6" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="@string/copyright"
+                android:gravity="bottom|center"
+                android:textSize="@dimen/copyright"
+                android:typeface="normal"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_weight="1.5"
+                android:textColor="#ff000000" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.6"></RelativeLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="7" />
+    </LinearLayout>
+
+</RelativeLayout>
